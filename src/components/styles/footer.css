@@ -1,0 +1,25 @@
+footer{
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.footer-menu{
+    padding-top:80px;
+}
+.first-menu > ul{
+    list-style-type: none;
+}
+.menu-header{
+    padding-left: 10%;
+}
+.bottomLine{
+    min-height: 45vh;
+    background-color: #0f0f0f;
+    color:white;
+}
+/* aligns the menu to the center if the view is less than size below, it is the size of mobile */
+@media(max-width:576px){
+    footer{
+        text-align: center;
+    }
+}

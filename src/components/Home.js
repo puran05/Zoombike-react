@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/home.css";
 import bigBike1 from "../images/bigBike1.png";
 import bigBike2 from "../images/bigBike2.png";
@@ -13,6 +14,7 @@ import kid3 from "../images/kid3.png";
 import kid4 from "../images/kid4.png";
 import rectangle from "../images/rectangle.png";
 import secondIntroImage from "../images/secondIntroImage.jpg";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -21,7 +23,7 @@ export default function Home() {
         <p>🎉🎉🎉Holiday special!!!Free Shipping.See Detail😊😊</p>
       </div>
       <div className="companyPicture">
-        <h2 class="bikeHeadingLogo">Zoom Bikes</h2>
+        <h2 className="bikeHeadingLogo">Zoom Bikes</h2>
       </div>
       <div className="motto">
         <span>
@@ -32,7 +34,10 @@ export default function Home() {
       </div>
 
       <div>
-        <div class="container-fluid col-8 headingOne"> Shop all products</div>
+        <div className="container-fluid col-8 headingOne">
+          {" "}
+          Shop all products
+        </div>
       </div>
 
       {/* the product carousel is supposed to go here  */}
@@ -46,7 +51,7 @@ export default function Home() {
       <div>
         <div>
           <div>
-            <div class="row">
+            <div className="row">
               <div className="col-3">
                 <img src={kid1} className="d-block w-100" alt="..." />
                 <h3 className="bikeModel">Mini Trex 1</h3>
@@ -70,10 +75,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <hr></hr>
         <section>
-          <div class="kidsBikeButton">
+          <div className="kidsBikeButton">
             <button className="btn btn-dark">Shop all instore bike</button>
           </div>
           <div>
@@ -105,7 +109,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* remake of the first section */}
         <div className="container first-imageText">
           <div className="col-lg-6 col-md-4 col-sm-6 first-text-section">
@@ -128,7 +131,6 @@ export default function Home() {
             ></img>
           </div>
         </div>
-
         {/* remake of the second section */}
         <div className="container second-imageText">
           <div className="row">
@@ -153,9 +155,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         {/* third pic to describe the benefits of the bike to the env  */}
-
         <section className="last-section">
           <div className="container">
             <div className="row heading-subtext"></div>
@@ -181,6 +181,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     </>
   );
