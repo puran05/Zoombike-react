@@ -7,7 +7,6 @@ Welcome to the Zoom Bikes repository! This project showcases a sample applicatio
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
-- [Demo](#demo)
 
 ## Introduction
 
