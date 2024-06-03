@@ -32,10 +32,15 @@ To run the demo locally, follow these steps:
    ```
 
 2. **Install dependencies**
+
+   ```sh
    npm install
+   ```
 
 3. Start the application
+   ```sh
    npm start
+   ```
 
 ---
 
